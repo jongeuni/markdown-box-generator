@@ -1,7 +1,7 @@
 // src/badge/badge.module.ts
 import { Module } from '@nestjs/common';
-import { BadgeService } from './badge.service';
-import { BadgeController } from './badge.controller';
+import { BadgeService } from '../api/badge.service';
+import { BadgeController } from '../api/badge.controller';
 
 @Module({
   providers: [BadgeService],
