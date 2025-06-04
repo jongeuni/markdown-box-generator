@@ -9,11 +9,19 @@ export class BadgeController {
   constructor(private readonly boxService: BadgeService) {}
 
   @Get()
-  generateBox(@Query() body: { link: string; title: string; date: string; name: string; theme: Theme }) {
-    const { link, title, date, name, theme } = body;
+generateBox(
+  @Query() query: { link: string; title: string; date: string; name: string; theme: Theme },
+  @Res() res: Response,
+) {
+  const svg = this.boxService.generateSvgBox(
+    query.link,
+    query.title,
+    query.date,
+    query.name,
+    query.theme,
+  );
 
-    const boxHtml = this.boxService.generateBox(link, title, date, name, theme);
-    // res.send(boxHtml);
-    return boxHtml;
-  }
+  res.setHeader('Content-Type', 'image/svg+xml');
+  res.send(svg);
+}
 }
