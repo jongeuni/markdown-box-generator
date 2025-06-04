@@ -1,1 +1,0 @@
-export type Theme = 'tistory' | 'brunch' | 'instagram';
