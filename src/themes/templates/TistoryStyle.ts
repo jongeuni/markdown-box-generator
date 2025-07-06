@@ -1,14 +1,13 @@
 import { TextPosition } from "../BoxConstants";
 import { BoxStyleDto } from "../BoxGenerator";
 
-export const TistoryStyle: BoxStyleDto = {
+export const tistoryStyle: BoxStyleDto = {
   name: 'tistory',
   boxStyles: `
     .box { 
-      fill: url(#tistoryGradient); 
-      stroke: none; 
       rx: 30; 
       ry: 30; 
+      fill: url(#tistoryGradient); 
     }
   `,
   titleStyles: `
