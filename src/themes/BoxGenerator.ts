@@ -1,7 +1,9 @@
-import { defaultTheme } from "./DefaultTheme";
-import { tistoryTheme } from "./TistoryTheme";
+import { TistoryStyle } from "./templates/TistoryStyle";
+import { BoxSize, TextPosition } from "./BoxConstants";
+import { defaultStyle } from "./templates/DefaultStyle";
+import { BoxStyle } from "./BoxStyleType";
 
-export interface BoxTheme {
+export interface BoxStyleDto {
     name: string;
     boxStyles: string;
     titleStyles: string;
@@ -17,26 +19,26 @@ export interface Box {
 }
 
 export function getDefaultBox(box: Box): string {
-    return generateBoxSVG(box, defaultTheme);
+    return generateBoxSVG(box, defaultStyle);
 }
 
 export function getTistoryBox(box: Box): string {
-    return generateBoxSVG(box, tistoryTheme);
+    return generateBoxSVG(box, TistoryStyle);
 }
 
 export function getBrunchBox(box: Box): string {
-    return generateBoxSVG(box, tistoryTheme);
+    return generateBoxSVG(box, defaultStyle);
 }
 
 export function getLinkedBox(box: Box): string {
-    return generateBoxSVG(box, tistoryTheme);
+    return generateBoxSVG(box, defaultStyle);
 }
 
 export function getInstaBox(box: Box): string {
-    return generateBoxSVG(box, tistoryTheme);
+    return generateBoxSVG(box, defaultStyle);
 }
 
-function generateBoxSVG(box: Box, theme: BoxTheme): string {
+function generateBoxSVG(box: Box, style: BoxStyleDto): string {
     const metaText = [box.author, box.date].filter(Boolean).join(' · ');
 
     return `
@@ -55,14 +57,14 @@ function generateBoxSVG(box: Box, theme: BoxTheme): string {
         </filter>
       </defs>
       <style>
-        ${theme.titleStyles}
-        ${theme.metaStyles}
-        ${theme.boxStyles}
+        ${style.titleStyles}
+        ${style.metaStyles}
+        ${style.boxStyles}
       </style>
-      <rect x="0" y="0" width="400" height="120" class="box" filter="url(#shadow)"/>
-      ${theme.customElements || ''}
-      <text x="20" y="40" class="title">${box.title}</text>
-      <text x="20" y="70" class="meta">${metaText}</text>
+      <rect x="0" y="0" width="${BoxSize.width}" height="${BoxSize.height}" class="box" filter="url(#shadow)"/>
+      ${style.customElements || ''}
+      <text x="${TextPosition.x}" y="${TextPosition.y}" class="title">${box.title}</text>
+      <text x="${TextPosition.x}" y="${TextPosition.y + 25}" class="meta">${metaText}</text>
     </svg>
     `;
 }

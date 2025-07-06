@@ -1,13 +1,14 @@
-import { BoxTheme } from "./BoxGenerator";
+import { TextPosition } from "../BoxConstants";
+import { BoxStyleDto } from "../BoxGenerator";
 
-export const tistoryTheme: BoxTheme = {
+export const TistoryStyle: BoxStyleDto = {
   name: 'tistory',
   boxStyles: `
     .box { 
       fill: url(#tistoryGradient); 
       stroke: none; 
-      rx: 12; 
-      ry: 12; 
+      rx: 30; 
+      ry: 30; 
     }
   `,
   titleStyles: `
@@ -25,7 +26,6 @@ export const tistoryTheme: BoxTheme = {
     }
   `,
   customElements: `
-    <rect x="350" y="85" width="30" height="20" rx="10" fill="rgba(255,255,255,0.2)" />
-    <text x="365" y="97" font="10px sans-serif" fill="rgba(255,255,255,0.8)" text-anchor="middle">T</text>
-  `
+  <image href="/static/tistory-logo.svg" x="${TextPosition.x + 200}" y="${TextPosition.y + 10}" width="30" height="20" />
+`,
 };

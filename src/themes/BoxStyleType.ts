@@ -1,4 +1,4 @@
-export enum Theme {
+export enum BoxStyle {
     TISTORY = 'tistory',
     BRUNCH = 'brunch',
     INSTA = 'insta',

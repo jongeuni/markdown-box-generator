@@ -1,26 +1,26 @@
 import { getBrunchBox, getDefaultBox, getInstaBox, getLinkedBox, getTistoryBox } from '../themes/BoxGenerator';
-import { Theme } from '../themes/ThemeType';
+import { BoxStyle} from '../themes/BoxStyleType';
 
 interface BoxParams {
   link?: string;
   title?: string;
   date?: string;
   author?: string;
-  theme?: string;
+  style?: BoxStyle;
 }
 
 export class BoxService {
   static generateBox(params: BoxParams): string {
-    const { link = '', title = '', date = '', author = '', theme = 'default' } = params;
+    const { link = '', title = '', date = '', author = '', style = 'default' } = params;
 
-    switch (theme) {
-      case Theme.TISTORY:
+    switch (style) {
+      case BoxStyle.TISTORY:
         return getTistoryBox({ link, title, date, author });
-      case Theme.BRUNCH:
+      case BoxStyle.BRUNCH:
         return getBrunchBox({ link, title, date, author });
-      case Theme.LINKED:
+      case BoxStyle.LINKED:
         return getLinkedBox({ link, title, date, author });
-      case Theme.INSTA:
+      case BoxStyle.INSTA:
         return getInstaBox({ link, title, date, author });
       default:
         return getDefaultBox({ link, title, date, author });

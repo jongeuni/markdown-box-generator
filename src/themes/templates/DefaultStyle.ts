@@ -1,6 +1,6 @@
-import { BoxTheme } from "./BoxGenerator";
+import { BoxStyleDto } from "../BoxGenerator";
 
-export const defaultTheme: BoxTheme = {
+export const defaultStyle: BoxStyleDto = {
   name: 'default',
   boxStyles: `
     .box { 
