@@ -12,7 +12,7 @@ interface BoxParams {
 export class BoxService {
   static generateBox(params: BoxParams): string {
     const { link = '', title = '', date = '', author = '', style = 'default' } = params;
-
+    
     switch (style) {
       case BoxStyle.TISTORY:
         return getTistoryBox({ link, title, date, author });

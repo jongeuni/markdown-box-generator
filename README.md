@@ -1,6 +1,9 @@
 ![box](http://localhost:3001/box?title=My%20Post&date=2025-06-04&name=John&link=https%3A%2F%2Fexample.com&theme=tistory)
 
 ## markdown-box-generator
+You can check the README of English 👉 [Document of English](https://github.com/jongeuni/markdown-box-generator/blob/main/README-EN.md)
+
+
 내 정보를 담은 박스를 만들어주는 간단한 서비스입니다.<br>
 box-generator 아래 사용 방법과 테마 정보를 확인하실 수 있습니다.
 
