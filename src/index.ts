@@ -13,7 +13,6 @@ app.use('/static', express.static(path.join(__dirname, 'static')));
 
 app.use('/box', boxRouter);
 
-
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });

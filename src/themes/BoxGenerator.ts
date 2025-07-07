@@ -2,6 +2,7 @@ import { tistoryStyle } from "./templates/TistoryStyle";
 import { BoxSize, TextPosition } from "./BoxConstants";
 import { defaultStyle } from "./templates/DefaultStyle";
 import { BoxStyle } from "./BoxStyleType";
+import { svgGradients } from "./templates/\bgradients";
 
 export interface BoxStyleDto {
   name: string;
@@ -78,16 +79,9 @@ function generateBoxSVG(box: Box, style: BoxStyleDto): string {
 
 
   return `
-  <svg width="400" height="120" xmlns="http://www.w3.org/2000/svg">
+  <svg width="${BoxSize.width} + 30" height="${BoxSize.height} + 20" xmlns="http://www.w3.org/2000/svg">
     <defs>
-      <linearGradient id="defaultGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-      </linearGradient>
-       <linearGradient id="tistoryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:rgb(254, 112, 10)" />
-          <stop offset="100%" style="stop-color:rgba(236, 75, 0, 0.86)" />
-        </linearGradient>
+      ${svgGradients}
       <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
         <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.1)"/>
       </filter>
