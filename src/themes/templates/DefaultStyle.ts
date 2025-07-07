@@ -6,7 +6,7 @@ export const defaultStyle: BoxStyleDto = {
     .box { 
       rx: 30; 
       ry: 30; 
-      fill: rgba(0, 0, 0, 0.03)
+      fill: url(#defaultGradient);
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
     }
   `,

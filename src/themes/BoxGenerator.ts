@@ -2,7 +2,10 @@ import { tistoryStyle } from "./templates/TistoryStyle";
 import { BoxSize, TextPosition } from "./BoxConstants";
 import { defaultStyle } from "./templates/DefaultStyle";
 import { BoxStyle } from "./BoxStyleType";
-import { svgGradients } from "./templates/\bgradients";
+import { svgGradients } from "./templates/gradients";
+import { brunchStyle } from "./templates/BrunchStyle";
+import { instaStyle } from "./templates/InstaStyle";
+import { linkedStyle } from "./templates/LinkedStyle";
 
 export interface BoxStyleDto {
   name: string;
@@ -28,15 +31,15 @@ export function getTistoryBox(box: Box): string {
 }
 
 export function getBrunchBox(box: Box): string {
-  return generateBoxSVG(box, defaultStyle);
+  return generateBoxSVG(box, brunchStyle);
 }
 
 export function getLinkedBox(box: Box): string {
-  return generateBoxSVG(box, defaultStyle);
+  return generateBoxSVG(box, linkedStyle);
 }
 
 export function getInstaBox(box: Box): string {
-  return generateBoxSVG(box, defaultStyle);
+  return generateBoxSVG(box, instaStyle);
 }
 
 export function spaceChangeTitle(title: string): string {

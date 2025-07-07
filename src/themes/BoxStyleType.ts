@@ -3,7 +3,6 @@ export enum BoxStyle {
     BRUNCH = 'brunch',
     INSTA = 'insta',
     LINKED = 'linked',
-    NAVER = 'naver',
     DEFAULT = 'default',
   }
   
