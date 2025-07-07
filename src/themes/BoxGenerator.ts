@@ -21,6 +21,7 @@ export interface Box {
   link?: string;
   author?: string;
   date?: string;
+  isIconToggle: boolean;
 }
 
 export function getDefaultBox(box: Box): string {
@@ -57,13 +58,11 @@ function generateBoxSVG(box: Box, style: BoxStyleDto): string {
   const needsScroll = convertedTitle.length > 30;
 
   let animatedText;
-  const isLogoToggle = true;
 
   const ICON_WIDTH = 30; // 아이콘 가로 크기 (iconSVG width와 맞추세요)
   const ICON_GAP = 2;    // 아이콘과 제목 사이 간격
-
   // 아이콘이 있으면 오른쪽으로, 없으면 원래 위치
-  const hasIcon = isLogoToggle && !!style.iconSVG;
+  const hasIcon = box.isIconToggle && !!style.iconSVG;
   const TITLE_X = hasIcon ? (TextPosition.x + ICON_WIDTH + ICON_GAP) : TextPosition.x;
 
   if (needsScroll) {
@@ -108,7 +107,7 @@ function generateBoxSVG(box: Box, style: BoxStyleDto): string {
       ${style.boxStyles}
     </style>
     <rect x="0" y="0" width="${BoxSize.width}" height="${BoxSize.height}" class="box" filter="url(#shadow)"/>
-    ${isLogoToggle && style.iconSVG ? style.iconSVG : ""}
+    ${box.isIconToggle && style.iconSVG ? style.iconSVG : ""}
     ${style.customElements || ''}
     ${animatedText}
     <text x="${TextPosition.x}" y="${TextPosition.y + 25}" class="meta">${metaText}</text>
