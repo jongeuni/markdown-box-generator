@@ -24,7 +24,7 @@ export const instaStyle: BoxStyleDto = {
       text-shadow: 0 1px 1px rgba(0,0,0,0.3);
     }
   `,
-//   customElements: `
-//   <image href="/static/tistory-logo.svg" x="${TextPosition.x + 200}" y="${TextPosition.y + 10}" width="30" height="20" />
-// `,
+  iconSVG: `
+   <image href="/static/profile-icon-v2-white.svg" x="${TextPosition.x }" y="${TextPosition.y - 18}" width="25" height="25" />
+  `
 };

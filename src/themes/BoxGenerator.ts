@@ -13,6 +13,7 @@ export interface BoxStyleDto {
   titleStyles: string;
   metaStyles: string;
   customElements?: string;
+  iconSVG?: string; // 추가
 }
 
 export interface Box {
@@ -56,6 +57,14 @@ function generateBoxSVG(box: Box, style: BoxStyleDto): string {
   const needsScroll = convertedTitle.length > 30;
 
   let animatedText;
+  const isLogoToggle = true;
+
+  const ICON_WIDTH = 30; // 아이콘 가로 크기 (iconSVG width와 맞추세요)
+  const ICON_GAP = 2;    // 아이콘과 제목 사이 간격
+
+  // 아이콘이 있으면 오른쪽으로, 없으면 원래 위치
+  const hasIcon = isLogoToggle && !!style.iconSVG;
+  const TITLE_X = hasIcon ? (TextPosition.x + ICON_WIDTH + ICON_GAP) : TextPosition.x;
 
   if (needsScroll) {
     const textWidthEstimate = convertedTitle.length * 10; // 글자폭 대략
@@ -65,18 +74,18 @@ function generateBoxSVG(box: Box, style: BoxStyleDto): string {
 
     animatedText = `
       <g clip-path="url(#textClip)">
-        <text x="0" y="${TextPosition.y}" class="title">
-          ${box.title}
-          <animate attributeName="x" from="0" to="-${textWidthEstimate}" dur="${dur}s" repeatCount="indefinite" />
+        <text x="${TITLE_X}" y="${TextPosition.y}" class="title">
+          ${convertedTitle}
+          <animate attributeName="x" from="${TITLE_X}" to="${TITLE_X - textWidthEstimate}" dur="${dur}s" repeatCount="indefinite" />
         </text>
-        <text x="${textWidthEstimate}" y="${TextPosition.y}" class="title">
-          ${box.title}
-          <animate attributeName="x" from="${textWidthEstimate}" to="0" dur="${dur}s" repeatCount="indefinite" />
+        <text x="${TITLE_X + textWidthEstimate}" y="${TextPosition.y}" class="title">
+          ${convertedTitle}
+          <animate attributeName="x" from="${TITLE_X + textWidthEstimate}" to="${TITLE_X}" dur="${dur}s" repeatCount="indefinite" />
         </text>
       </g>
     `;
   } else {
-    animatedText = `<text x="${TextPosition.x}" y="${TextPosition.y}" class="title">${title}</text>`;
+    animatedText = `<text x="${TITLE_X}" y="${TextPosition.y}" class="title">${title}</text>`;
   }
 
 
@@ -89,7 +98,7 @@ function generateBoxSVG(box: Box, style: BoxStyleDto): string {
         <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.1)"/>
       </filter>
       <clipPath id="textClip">
-  <rect x="${TextPosition.x}" y="${TextPosition.y - 16}" width="200" height="20" />
+  <rect x="${TITLE_X}" y="${TextPosition.y - 16}" width="200" height="20" />
 </clipPath>
 
     </defs>
@@ -99,6 +108,7 @@ function generateBoxSVG(box: Box, style: BoxStyleDto): string {
       ${style.boxStyles}
     </style>
     <rect x="0" y="0" width="${BoxSize.width}" height="${BoxSize.height}" class="box" filter="url(#shadow)"/>
+    ${isLogoToggle && style.iconSVG ? style.iconSVG : ""}
     ${style.customElements || ''}
     ${animatedText}
     <text x="${TextPosition.x}" y="${TextPosition.y + 25}" class="meta">${metaText}</text>

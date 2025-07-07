@@ -25,4 +25,7 @@ export const brunchStyle: BoxStyleDto = {
       text-shadow: 0 0.5px 0.5px rgba(0,0,0,0.3);
     }
   `,
+  iconSVG: `
+   <image href="/static/pen-icon.svg" x="${TextPosition.x }" y="${TextPosition.y - 15}" width="20" height="20" />
+  `
 };

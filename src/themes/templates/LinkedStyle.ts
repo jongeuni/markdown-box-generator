@@ -24,7 +24,7 @@ export const linkedStyle: BoxStyleDto = {
       text-shadow: 0 1px 1px rgba(0,0,0,0.3);
     }
   `,
-//   customElements: `
-//   <image href="/static/tistory-logo.svg" x="${TextPosition.x + 200}" y="${TextPosition.y + 10}" width="30" height="20" />
-// `,
+  iconSVG: `
+   <image href="/static/connect-icon-white.svg" x="${TextPosition.x }" y="${TextPosition.y - 15}" width="20" height="20" />
+  `
 };
