@@ -51,11 +51,11 @@ export function spaceChangeTitle(title: string): string {
 function generateBoxSVG(box: Box, style: BoxStyleDto): string {
   const metaText = [box.author, box.date].filter(Boolean).join(' · ');
 
-  const maxTitleLength = 20;
+  const maxTitleLength = 16;
   const isLongTitle = box.title.length > maxTitleLength;
   const convertedTitle = spaceChangeTitle(box.title);
   const title = isLongTitle ? convertedTitle.slice(0, maxTitleLength) + "..." : convertedTitle;
-  const needsScroll = convertedTitle.length > 30;
+  const needsScroll = convertedTitle.length > 16;
 
   let animatedText;
 

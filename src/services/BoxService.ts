@@ -17,7 +17,7 @@ export class BoxService {
       ? false
       : true;
 
-    switch (style) {
+    switch (style.toLowerCase()) {
       case BoxStyle.TISTORY:
         return getTistoryBox({ link, title, date, author, isIconToggle });
       case BoxStyle.BRUNCH:
