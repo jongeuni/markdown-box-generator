@@ -5,15 +5,17 @@
 <br>
 
 
-markdown-box-generator
+## markdown-box-generator
 A simple service that generates a box containing your information.<br>
 Check out box-generator below for usage and theme information.
 
 <br>
 ##How to use
+
 ```bash
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Default_Title&author=Author&date=2025-7-28&style=default)](https://github.com/jongeuni/markdown-box-generator)
 ```
+
 🔍 Parameters
 - title
 - author
@@ -29,6 +31,7 @@ Check out box-generator below for usage and theme information.
 > Using a plain space will prevent the request from working.
 
 <br>
+
 ## Box Style Information
 Theme style types are defined in `src/themes/BoxStyleType.ts.`
 
@@ -41,15 +44,15 @@ Theme style types are defined in `src/themes/BoxStyleType.ts.`
 | LinkedIn Style  | LIINKED |
 | Default Style  | DEFAULT |
 
-- Orange Blog Style (TISTORY)
-[![box](https://markdown-box-generator.vercel.app/api/box?title=Tistory_style&author=Author&date=2025-7-28&style=tistory)](https://github.com/jongeuni/markdown-box-generator)
+#### - Orange Blog Style (TISTORY)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Orange_style&author=Author&date=2025-7-28&style=tistory)](https://github.com/jongeuni/markdown-box-generator)
 
-- Medium Style (BRUNCH)
-[![box](https://markdown-box-generator.vercel.app/api/box?title=Brunch_style&author=Author&date=2025-7-28&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
+#### Medium Style (BRUNCH)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Mediu,_style&author=Author&date=2025-7-28&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
 
-- Instagram Style (INSTA)
+#### Instagram Style (INSTA)
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Insta_style&author=Author&style=insta)](https://github.com/jongeuni/markdown-box-generator)
 
-- LinkedIn Style (LIINKED)
+#### LinkedIn Style (LIINKED)
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Linked_style&author=Author&style=linked)](https://github.com/jongeuni/markdown-box-generator)
 
