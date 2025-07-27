@@ -1,12 +1,12 @@
-[![box](https://markdown-box-generator.vercel.app/api/box?title=markdown_box_code_👀&author=jongeui)](https://github.com/jongeuni/markdown-box-generator) [![box](https://markdown-box-generator.vercel.app/api/box?title=markdown_box_code_👀_move_title&author=jongeui&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=markdown_box_code_👀&author=jongeui)](https://github.com/jongeuni/markdown-box-generator)
 <br>
 `You can check the README of English` 👉 [Document of English](https://github.com/jongeuni/markdown-box-generator/blob/main/README-EN.md)
 <br>
 <br>
 
 ## markdown-box-generator
-내 정보를 담은 박스를 만들어주는 간단한 서비스입니다.<br>
-box-generator 아래 사용 방법과 테마 정보를 확인하실 수 있습니다.
+원하는 정보를 담은 박스를 만들어주는 간단한 서비스입니다.<br>
+아래에서 box-generator 사용 방법과 테마 정보를 확인하실 수 있습니다.
 
 <br>
 
