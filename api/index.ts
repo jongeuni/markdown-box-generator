@@ -2,8 +2,11 @@ import serverless from 'serverless-http';
 import express from 'express';
 import boxRouter from '../src/routes/BoxRouter';
 import healthRouter from '../src/routes/HealthRouter';
+import path from 'path';
 
 const app = express();
+
+app.use('/api/static', express.static(path.join(__dirname, '../src/static')));
 
 app.use('/api/box', boxRouter);
 
