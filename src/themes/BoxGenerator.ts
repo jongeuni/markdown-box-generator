@@ -48,14 +48,20 @@ export function spaceChangeTitle(title: string): string {
   return title.replace(/_/g, " ");
 }
 
+function getByteLength(str: string): number {
+  return new TextEncoder().encode(str).length;
+}
+
 function generateBoxSVG(box: Box, style: BoxStyleDto): string {
   const metaText = [box.author, box.date].filter(Boolean).join(' · ');
 
-  const maxTitleLength = 16;
-  const isLongTitle = box.title.length > maxTitleLength;
+  // fixme 
+  const maxTitleByteLength = 16;
+  // const titleByteLength = getByteLength(box.title);
+  const isLongTitle = box.title.length > maxTitleByteLength;
   const convertedTitle = spaceChangeTitle(box.title);
-  const title = isLongTitle ? convertedTitle.slice(0, maxTitleLength) + "..." : convertedTitle;
-  const needsScroll = convertedTitle.length > 16;
+  const title = isLongTitle ? convertedTitle.slice(0, maxTitleByteLength) + "..." : convertedTitle;
+  const needsScroll = convertedTitle.length > 20;
 
   let animatedText;
 
@@ -90,7 +96,7 @@ function generateBoxSVG(box: Box, style: BoxStyleDto): string {
 
 
   return `
-  <svg width="${BoxSize.width} + 30" height="${BoxSize.height} + 20" xmlns="http://www.w3.org/2000/svg">
+  <svg width="${BoxSize.width + 30}" height="${BoxSize.height + 20}" xmlns="http://www.w3.org/2000/svg">
     <defs>
       ${svgGradients}
       <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
@@ -99,7 +105,6 @@ function generateBoxSVG(box: Box, style: BoxStyleDto): string {
       <clipPath id="textClip">
   <rect x="${TITLE_X}" y="${TextPosition.y - 16}" width="200" height="20" />
 </clipPath>
-
     </defs>
     <style>
       ${style.titleStyles}
