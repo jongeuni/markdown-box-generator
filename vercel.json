@@ -2,7 +2,7 @@
     "redirects": [
       {
         "source": "/",
-        "destination": "https://github.com/jongeun/markdwon-box-generator"
+        "destination": "https://github.com/jongeuni/markdown-box-generator"
       }
     ],
     "rewrites": [
