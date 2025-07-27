@@ -1,39 +1,55 @@
-![box](http://localhost:3001/box?title=My%20Post&date=2025-06-04&name=John&link=https%3A%2F%2Fexample.com&theme=tistory)
-
-## markdown-box-generator
-It is simple service that makes a box contaning my information.
-
+[![box](https://markdown-box-generator.vercel.app/api/box?title=markdown_box_code_👀&author=jongeui)](https://github.com/jongeuni/markdown-box-generator) [![box](https://markdown-box-generator.vercel.app/api/box?title=markdown_box_code_👀_move_title&author=jongeui&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
+<br>
+`You can check the README of English` 👉 [Document of English](https://github.com/jongeuni/markdown-box-generator/blob/main/README-EN.md)
+<br>
 <br>
 
-## How to use
-[![box-generator](http://localhost:3000/badge?name=JohnDoe&title=My%20Blog%20Post&date=2025-05-30&link=https://example.com&theme=tistory)](https://github.com/jongeuni/markdown-box-generator/settings)
-param
-<각 파람에 해당하는 사진 첨부> <br>
-- title(required)
-- name(nullabel)
-- date(nullabel)
-- style(nullabel)
 
->Important
->If the value is not passed, the default value is entered.
-
->Caution
-> If you need spaces in the request, please enter _
-> ex: ?title=nice_to_meet_you or ?title=nice%20to%20meet%20you
+markdown-box-generator
+A simple service that generates a box containing your information.<br>
+Check out box-generator below for usage and theme information.
 
 <br>
+##How to use
+```bash
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Default_Title&author=Author&date=2025-7-28&style=default)](https://github.com/jongeuni/markdown-box-generator)
+```
+🔍 Parameters
+- title
+- author
+- date
+- style
 
-## Style Information
-The style type is defined in `src/themes/BoxStyleType.ts`
+> [!IMPORTANT]
+> If you don’t provide a value, a default value will be used.
 
-(아래는 테이블)
-Style	Type
-Tistory Style(Orange)	TISTORY
-Brunch Style(White)	BRUNCH
-Instgrame Style(Purple)	INSTA
-LinkedIn Style(Blue)	LIINKED
-Default Style(Black)	DEFAULT
+> [!Caution]
+> For spaces, use _ or %20.<br>
+> `e.g.: ?title=Badge_Title_Here or ?title=Badge%20Title%20Here`<br>
+> Using a plain space will prevent the request from working.
 
-### Tistory Style (TISTORY)
-[![box-generator](http://localhost:3000/badge?name=jongeun&title=내 삶의 지도&date=2025-05-30&link=https://example.com&theme=tistory)](https://github.com/jongeuni/markdown-box-generator/settings)
-box-generator
+<br>
+## Box Style Information
+Theme style types are defined in `src/themes/BoxStyleType.ts.`
+
+
+| Style | Request Type |
+| ------------- | ------------- |
+| Orange Blog Style  | TISTORY |
+| Medium Style  | BRUNCH |
+| Instagram Style  | INSTA |
+| LinkedIn Style  | LIINKED |
+| Default Style  | DEFAULT |
+
+- Orange Blog Style (TISTORY)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Tistory_style&author=Author&date=2025-7-28&style=tistory)](https://github.com/jongeuni/markdown-box-generator)
+
+- Medium Style (BRUNCH)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Brunch_style&author=Author&date=2025-7-28&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
+
+- Instagram Style (INSTA)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Insta_style&author=Author&style=insta)](https://github.com/jongeuni/markdown-box-generator)
+
+- LinkedIn Style (LIINKED)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Linked_style&author=Author&style=linked)](https://github.com/jongeuni/markdown-box-generator)
+
