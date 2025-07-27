@@ -6,8 +6,6 @@ import path from 'path';
 
 const app = express();
 
-app.use('/api/static', express.static(path.join(__dirname, '../src/static')));
-
 app.use('/api/box', boxRouter);
 
 app.use('/api/health', healthRouter);
