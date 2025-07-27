@@ -11,6 +11,6 @@ console.log('✅ api/index.ts loaded');
 app.use('/static', express.static(path.join(__dirname, '../src/static')));
 
 // 라우터
-app.use('/box', boxRouter);
+app.use('/api/box', boxRouter);
 
 export default serverless(app);
