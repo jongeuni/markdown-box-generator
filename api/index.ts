@@ -8,15 +8,27 @@ const app = express();
 
 console.log('✅ api/index.ts loaded');
 
-// 정적 파일 제공
-app.use('/static', express.static(path.join(__dirname, '../src/static')));
-
-// 라우터
-app.use('/api/box', boxRouter);
-app.use('/api/health', healthRouter);
-
-app.use((req, res) => {
+app.get('/api/box', (req, res) => {
+    res.send('box ok');
+  });
+  
+  app.get('/api/health', (req, res) => {
+    res.send('health ok');
+  });
+  
+  app.use((req, res) => {
     res.status(404).send('Not Found');
   });
+
+// 정적 파일 제공
+// app.use('/static', express.static(path.join(__dirname, '../src/static')));
+
+// // 라우터
+// app.use('/api/box', boxRouter);
+// app.use('/api/health', healthRouter);
+
+// app.use((req, res) => {
+//     res.status(404).send('Not Found');
+//   });
 
 export default serverless(app);
