@@ -3,11 +3,11 @@ import express from 'express';
 
 const app = express();
 
-app.get('/box', (req, res) => {
+app.get('/api/box', (req, res) => {
   res.send('box ok');
 });
 
-app.get('/health', (req, res) => {
+app.get('/api/health', (req, res) => {
   res.send('health ok');
 });
 
