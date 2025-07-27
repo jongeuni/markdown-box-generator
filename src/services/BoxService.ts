@@ -1,5 +1,5 @@
 import { getBrunchBox, getDefaultBox, getInstaBox, getLinkedBox, getTistoryBox } from '../themes/BoxGenerator';
-import { BoxStyle} from '../themes/BoxStyleType';
+import { BoxStyle } from '../themes/BoxStyleType';
 
 interface BoxParams {
   link?: string;
@@ -12,14 +12,14 @@ interface BoxParams {
 
 export class BoxService {
   static generateBox(params: BoxParams): string {
-    const { link = '', title = '', date = '', author = '', style = 'default' } = params;
+    const { link = 'https://github.com/jongeuni/markdown-box-generator', title = 'Default Title', date = '', author = '', style = 'default' } = params;
     const isIconToggle = params.isIcon === false || params.isIcon === 'false'
-    ? false
-    : true;
-    
+      ? false
+      : true;
+
     switch (style) {
       case BoxStyle.TISTORY:
-        return getTistoryBox({ link, title, date, author, isIconToggle});
+        return getTistoryBox({ link, title, date, author, isIconToggle });
       case BoxStyle.BRUNCH:
         return getBrunchBox({ link, title, date, author, isIconToggle });
       case BoxStyle.LINKED:
