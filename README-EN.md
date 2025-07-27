@@ -1,4 +1,4 @@
-[![box](https://markdown-box-generator.vercel.app/api/box?title=markdown_box_code_👀&author=jongeui)](https://github.com/jongeuni/markdown-box-generator) [![box](https://markdown-box-generator.vercel.app/api/box?title=markdown_box_code_👀_move_title&author=jongeui&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=md_box_code_👀&author=jongeui)](https://github.com/jongeuni/markdown-box-generator) [![box](https://markdown-box-generator.vercel.app/api/box?title=If_the_text_is_long,_the_title_shifts&author=jongeui&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
 <br>
 <br>
 
@@ -37,10 +37,10 @@ Theme style types are defined in `src/themes/BoxStyleType.ts.`
 
 | Style | Request Type |
 | ------------- | ------------- |
-| Orange Blog Style  | TISTORY |
 | Medium Style  | BRUNCH |
 | Instagram Style  | INSTA |
 | LinkedIn Style  | LIINKED |
+| Tistory Style  | TISTORY |
 | Default Style  | DEFAULT |
 
 #### - Orange Blog Style (TISTORY)
