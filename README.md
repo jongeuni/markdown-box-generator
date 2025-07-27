@@ -1,46 +1,54 @@
-![box](http://localhost:3001/box?title=My%20Post&date=2025-06-04&name=John&link=https%3A%2F%2Fexample.com&theme=tistory)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=markdown_box_code_👀&author=jongeui)](https://github.com/jongeuni/markdown-box-generator) [![box](https://markdown-box-generator.vercel.app/api/box?title=markdown_box_code_👀_move_title&author=jongeui&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
+<br>
+`You can check the README of English` 👉 [Document of English](https://github.com/jongeuni/markdown-box-generator/blob/main/README-EN.md)
+<br>
+<br>
 
 ## markdown-box-generator
-You can check the README of English 👉 [Document of English](https://github.com/jongeuni/markdown-box-generator/blob/main/README-EN.md)
-
-
 내 정보를 담은 박스를 만들어주는 간단한 서비스입니다.<br>
 box-generator 아래 사용 방법과 테마 정보를 확인하실 수 있습니다.
 
 <br>
 
 ## 사용 방법
-[![box-generator](http://localhost:3000/badge?name=JohnDoe&title=My%20Blog%20Post&date=2025-05-30&link=https://example.com&theme=tistory)](https://github.com/jongeuni/markdown-box-generator/settings)
-param
-<각 파람에 해당하는 사진 첨부> <br>
+```bash
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Default_Title&author=Author&date=2025-7-28&style=default)](https://github.com/jongeuni/markdown-box-generator)
+```
+### 🔍 param
+- **title**
+- **author**
+- **date**
+- **style**
 
-- name
-- title
-- date
-- link
-- theme
+> [!IMPORTANT]
+> 값을 전달하지 않을 경우 기본 값이 들어갑니다.
 
->Important
->값을 전달하지 않을 경우 기본 값이 들어갑니다.
 
->Caution
-> 띄어쓰기의 경우 _나 %20을 사용해서 입력해주세요.
-> ex: ?title=뱃지_제목_입니다 or ?title=뱃지%20제목%20입니다
+> [!Caution]
+> **띄어쓰기의 경우 _ 또는 %20을 사용**해 주세요.<br>
+> `ex: ?title=뱃지_제목_입니다 or ?title=뱃지%20제목%20입니다.`<br>
 > 그냥 띄어쓰기를 하실 경우 요청이 가지 않습니다.
 
 <br>
 
-## 테마 정보
-테마 타입은 src/themes/theme.type.ts에 정의되어있습니다.
+## 박스 스타일 정보
+테마 스타일 타입은 `src/themes/BoxStyleType.ts`에 정의되어있습니다.
 
-(아래는 테이블)
-제목	요청 타입
-티스토리 테마	TISTORY
-브런치 테마	BRUNCH
-인스타그램 테마	INSTA
-링크드인 테마	LIINKED
-기본 테마	DEFAULT
+| 제목  | 요청 타입 |
+| ------------- | ------------- |
+| 티스토리 스타일  | TISTORY |
+| 브런치 스타일  | BRUNCH |
+| 인스타그램 스타일  | INSTA |
+| 링크드인 스타일  | LIINKED |
+| 기본 스타일  | DEFAULT |
 
-### 티스토리 테마 (TISTORY)
-[![box-generator](http://localhost:3000/badge?name=jongeun&title=내 삶의 지도&date=2025-05-30&link=https://example.com&theme=tistory)](https://github.com/jongeuni/markdown-box-generator/settings)
-box-generator
+
+#### - 티스토리 스타일 (TISTORY)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Tistory_style&author=Author&date=2025-7-28&style=tistory)](https://github.com/jongeuni/markdown-box-generator)
+#### - 브런치 스타일 (BRUNCH)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Brunch_style&author=Author&date=2025-7-28&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
+#### - 인스타그램 스타일 (INSTA)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Insta_style&author=Author&style=insta)](https://github.com/jongeuni/markdown-box-generator)
+#### - 링크드인 스타일 (LIINKED)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Linked_style&author=Author&style=linked)](https://github.com/jongeuni/markdown-box-generator)
+
