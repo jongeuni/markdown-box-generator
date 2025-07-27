@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "rootDir": "./src",
     "outDir": "./dist",
+    "rootDir": "./",       
+    "module": "commonjs",
+    "target": "es2019",
     "esModuleInterop": true,
-    "strict": true,
-    "moduleResolution": "node"
-  }
+    "strict": true
+  },
+  "include": [
+    "src",
+    "api"                
+  ]
 }
