@@ -1,15 +1,13 @@
 import serverless from 'serverless-http';
 import express from 'express';
+import boxRouter from '../src/routes/BoxRouter';
+import healthRouter from '../src/routes/HealthRouter';
 
 const app = express();
 
-app.get('/api/box', (req, res) => {
-  res.send('box ok');
-});
+app.use('/api/box', boxRouter);
 
-app.get('/api/health', (req, res) => {
-  res.send('health ok');
-});
+app.use('/api/health', healthRouter);
 
 app.use((req, res) => {
   console.log('❌ 404 handler triggered for', req.url);
