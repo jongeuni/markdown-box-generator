@@ -1,0 +1,18 @@
+{
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "https://github.com/jongeun/markdwon-box-generator"
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/api",
+        "destination": "/api/index.ts"
+      },
+      {
+        "source": "/api/(.*)",
+        "destination": "/api/index.ts"
+      }
+    ]
+  }

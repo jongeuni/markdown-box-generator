@@ -5,6 +5,8 @@ import boxRouter from '../src/routes/BoxRouter';
 
 const app = express();
 
+console.log('✅ api/index.ts loaded');
+
 // 정적 파일 제공
 app.use('/static', express.static(path.join(__dirname, '../src/static')));
 
