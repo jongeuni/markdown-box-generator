@@ -11,9 +11,10 @@ export const instaStyle: BoxStyleDto = {
     }
   `,
   titleStyles: `
-    .title { 
-      font: bold 16px 'Segoe UI', system-ui, sans-serif; 
-      fill: white; 
+    .title {
+      font: bold 16px 'Segoe UI', system-ui, sans-serif;
+      letter-spacing: -0.2px;
+      fill: white;
       text-shadow: 0 1px 1px rgba(0,0,0,0.3);
     }
   `,
