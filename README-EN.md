@@ -45,6 +45,7 @@ Theme style types are defined in `src/themes/BoxStyleType.ts.`
 | Medium Style  | MEDIUM |
 | Velog Style  | VELOG |
 | GitHub Style  | GITHUB |
+| Neon Glow Style  | GLOW |
 
 #### - Orange Blog Style (TISTORY)
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Orange_style&author=Author&date=2025-7-28&style=tistory)](https://github.com/jongeuni/markdown-box-generator)
@@ -66,4 +67,7 @@ Theme style types are defined in `src/themes/BoxStyleType.ts.`
 
 #### - GitHub Style (GITHUB)
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Github_style&author=Author&style=github)](https://github.com/jongeuni/markdown-box-generator)
+
+#### - Neon Glow Style (GLOW)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Glow_style&author=Author&style=glow)](https://github.com/jongeuni/markdown-box-generator)
 

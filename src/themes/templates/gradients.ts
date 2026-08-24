@@ -41,4 +41,13 @@ export const svgGradients = `
          <stop offset="0%" style="stop-color:rgb(13, 17, 23)" />
           <stop offset="100%" style="stop-color:rgb(33, 38, 45)" />
         </linearGradient>
+  <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+         <stop offset="0%" style="stop-color:rgb(10, 10, 15)" />
+          <stop offset="50%" style="stop-color:rgb(31, 21, 61)" />
+          <stop offset="100%" style="stop-color:rgb(10, 10, 15)" />
+        </linearGradient>
+  <linearGradient id="glowIconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+         <stop offset="0%" style="stop-color:rgb(79, 157, 255)" />
+          <stop offset="100%" style="stop-color:rgb(255, 62, 165)" />
+        </linearGradient>
 `;

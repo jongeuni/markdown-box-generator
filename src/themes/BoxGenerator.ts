@@ -9,6 +9,7 @@ import { linkedStyle } from "./templates/LinkedStyle";
 import { mediumStyle } from "./templates/MediumStyle";
 import { velogStyle } from "./templates/VelogStyle";
 import { githubStyle } from "./templates/GithubStyle";
+import { glowStyle } from "./templates/GlowStyle";
 
 export interface BoxStyleDto {
   name: string;
@@ -57,6 +58,10 @@ export function getVelogBox(box: Box): string {
 
 export function getGithubBox(box: Box): string {
   return generateBoxSVG(box, githubStyle);
+}
+
+export function getGlowBox(box: Box): string {
+  return generateBoxSVG(box, glowStyle);
 }
 
 export function spaceChangeTitle(title: string): string {
