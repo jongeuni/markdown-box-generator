@@ -28,4 +28,9 @@ export const svgGradients = `
           <stop offset="50%" style="stop-color:rgb(0, 119, 181)" />
           <stop offset="100%" style="stop-color:rgb(10, 102, 194)" />
         </linearGradient>
+  <linearGradient id="mediumGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+         <stop offset="0%" style="stop-color:rgb(250, 250, 250)" />
+          <stop offset="50%" style="stop-color:rgb(255, 255, 255)" />
+          <stop offset="100%" style="stop-color:rgb(245, 245, 245)" />
+        </linearGradient>
 `;

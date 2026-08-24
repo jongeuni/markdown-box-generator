@@ -4,5 +4,5 @@ export enum BoxStyle {
     INSTA = 'insta',
     LINKED = 'linked',
     DEFAULT = 'default',
+    MEDIUM = 'medium',
   }
-  

@@ -38,20 +38,24 @@ Theme style types are defined in `src/themes/BoxStyleType.ts.`
 | Style | Request Type |
 | ------------- | ------------- |
 | Orange Blog Style  | TISTORY |
-| Medium Style  | BRUNCH |
+| Brunch Style  | BRUNCH |
 | Instagram Style  | INSTA |
-| LinkedIn Style  | LIINKED |
+| LinkedIn Style  | LINKED |
 | Default Style  | DEFAULT |
+| Medium Style  | MEDIUM |
 
 #### - Orange Blog Style (TISTORY)
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Orange_style&author=Author&date=2025-7-28&style=tistory)](https://github.com/jongeuni/markdown-box-generator)
 
-#### - Medium Style (BRUNCH)
-[![box](https://markdown-box-generator.vercel.app/api/box?title=Medium_style&author=Author&date=2025-7-28&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
+#### - Brunch Style (BRUNCH)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Brunch_style&author=Author&date=2025-7-28&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
 
 #### - Instagram Style (INSTA)
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Insta_style&author=Author&style=insta)](https://github.com/jongeuni/markdown-box-generator)
 
-#### - LinkedIn Style (LIINKED)
+#### - LinkedIn Style (LINKED)
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Linked_style&author=Author&style=linked)](https://github.com/jongeuni/markdown-box-generator)
+
+#### - Medium Style (MEDIUM)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Medium_style&author=Author&style=medium)](https://github.com/jongeuni/markdown-box-generator)
 

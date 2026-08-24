@@ -39,8 +39,9 @@
 | 티스토리 스타일  | TISTORY |
 | 브런치 스타일  | BRUNCH |
 | 인스타그램 스타일  | INSTA |
-| 링크드인 스타일  | LIINKED |
+| 링크드인 스타일  | LINKED |
 | 기본 스타일  | DEFAULT |
+| 미디엄 스타일  | MEDIUM |
 
 
 #### - 티스토리 스타일 (TISTORY)
@@ -49,6 +50,8 @@
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Brunch_style&author=Author&date=2025-7-28&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
 #### - 인스타그램 스타일 (INSTA)
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Insta_style&author=Author&style=insta)](https://github.com/jongeuni/markdown-box-generator)
-#### - 링크드인 스타일 (LIINKED)
+#### - 링크드인 스타일 (LINKED)
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Linked_style&author=Author&style=linked)](https://github.com/jongeuni/markdown-box-generator)
+#### - 미디엄 스타일 (MEDIUM)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Medium_style&author=Author&style=medium)](https://github.com/jongeuni/markdown-box-generator)
 

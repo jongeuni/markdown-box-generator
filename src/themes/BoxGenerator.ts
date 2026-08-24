@@ -6,6 +6,7 @@ import { svgGradients } from "./templates/gradients";
 import { brunchStyle } from "./templates/BrunchStyle";
 import { instaStyle } from "./templates/InstaStyle";
 import { linkedStyle } from "./templates/LinkedStyle";
+import { mediumStyle } from "./templates/MediumStyle";
 
 export interface BoxStyleDto {
   name: string;
@@ -42,6 +43,10 @@ export function getLinkedBox(box: Box): string {
 
 export function getInstaBox(box: Box): string {
   return generateBoxSVG(box, instaStyle);
+}
+
+export function getMediumBox(box: Box): string {
+  return generateBoxSVG(box, mediumStyle);
 }
 
 export function spaceChangeTitle(title: string): string {
