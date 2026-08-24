@@ -8,4 +8,5 @@ export enum BoxStyle {
     VELOG = 'velog',
     GITHUB = 'github',
     GLOW = 'glow',
+    NAVER = 'naver',
   }

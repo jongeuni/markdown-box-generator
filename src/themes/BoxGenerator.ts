@@ -10,6 +10,7 @@ import { mediumStyle } from "./templates/MediumStyle";
 import { velogStyle } from "./templates/VelogStyle";
 import { githubStyle } from "./templates/GithubStyle";
 import { glowStyle } from "./templates/GlowStyle";
+import { naverStyle } from "./templates/NaverStyle";
 
 export interface BoxStyleDto {
   name: string;
@@ -62,6 +63,10 @@ export function getGithubBox(box: Box): string {
 
 export function getGlowBox(box: Box): string {
   return generateBoxSVG(box, glowStyle);
+}
+
+export function getNaverBox(box: Box): string {
+  return generateBoxSVG(box, naverStyle);
 }
 
 export function spaceChangeTitle(title: string): string {

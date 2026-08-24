@@ -50,4 +50,9 @@ export const svgGradients = `
          <stop offset="0%" style="stop-color:rgb(79, 157, 255)" />
           <stop offset="100%" style="stop-color:rgb(255, 62, 165)" />
         </linearGradient>
+  <linearGradient id="naverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+         <stop offset="0%" style="stop-color:rgb(255, 255, 255)" />
+          <stop offset="50%" style="stop-color:rgb(250, 252, 250)" />
+          <stop offset="100%" style="stop-color:rgb(244, 248, 245)" />
+        </linearGradient>
 `;

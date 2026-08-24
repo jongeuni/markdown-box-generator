@@ -45,6 +45,7 @@
 | 벨로그 스타일  | VELOG |
 | 깃허브 스타일  | GITHUB |
 | 네온 글로우 스타일  | GLOW |
+| 네이버 블로그 스타일  | NAVER |
 
 
 #### - 티스토리 스타일 (TISTORY)
@@ -63,4 +64,6 @@
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Github_style&author=Author&style=github)](https://github.com/jongeuni/markdown-box-generator)
 #### - 네온 글로우 스타일 (GLOW)
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Glow_style&author=Author&style=glow)](https://github.com/jongeuni/markdown-box-generator)
+#### - 네이버 블로그 스타일 (NAVER)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Naver_style&author=Author&style=naver)](https://github.com/jongeuni/markdown-box-generator)
 

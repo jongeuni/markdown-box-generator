@@ -1,4 +1,4 @@
-import { getBrunchBox, getDefaultBox, getGithubBox, getGlowBox, getInstaBox, getLinkedBox, getMediumBox, getTistoryBox, getVelogBox } from '../themes/BoxGenerator';
+import { getBrunchBox, getDefaultBox, getGithubBox, getGlowBox, getInstaBox, getLinkedBox, getMediumBox, getNaverBox, getTistoryBox, getVelogBox } from '../themes/BoxGenerator';
 import { BoxStyle } from '../themes/BoxStyleType';
 
 interface BoxParams {
@@ -34,6 +34,8 @@ export class BoxService {
         return getGithubBox({ link, title, date, author, isIconToggle });
       case BoxStyle.GLOW:
         return getGlowBox({ link, title, date, author, isIconToggle });
+      case BoxStyle.NAVER:
+        return getNaverBox({ link, title, date, author, isIconToggle });
       default:
         return getDefaultBox({ link, title, date, author, isIconToggle });
     }
