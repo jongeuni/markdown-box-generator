@@ -33,4 +33,8 @@ export const svgGradients = `
           <stop offset="50%" style="stop-color:rgb(255, 255, 255)" />
           <stop offset="100%" style="stop-color:rgb(245, 245, 245)" />
         </linearGradient>
+  <linearGradient id="velogGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+         <stop offset="0%" style="stop-color:rgb(32, 201, 151)" />
+          <stop offset="100%" style="stop-color:rgb(18, 184, 134)" />
+        </linearGradient>
 `;

@@ -42,6 +42,7 @@
 | 링크드인 스타일  | LINKED |
 | 기본 스타일  | DEFAULT |
 | 미디엄 스타일  | MEDIUM |
+| 벨로그 스타일  | VELOG |
 
 
 #### - 티스토리 스타일 (TISTORY)
@@ -54,4 +55,6 @@
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Linked_style&author=Author&style=linked)](https://github.com/jongeuni/markdown-box-generator)
 #### - 미디엄 스타일 (MEDIUM)
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Medium_style&author=Author&style=medium)](https://github.com/jongeuni/markdown-box-generator)
+#### - 벨로그 스타일 (VELOG)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Velog_style&author=Author&style=velog)](https://github.com/jongeuni/markdown-box-generator)
 

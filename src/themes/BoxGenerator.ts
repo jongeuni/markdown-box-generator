@@ -7,6 +7,7 @@ import { brunchStyle } from "./templates/BrunchStyle";
 import { instaStyle } from "./templates/InstaStyle";
 import { linkedStyle } from "./templates/LinkedStyle";
 import { mediumStyle } from "./templates/MediumStyle";
+import { velogStyle } from "./templates/VelogStyle";
 
 export interface BoxStyleDto {
   name: string;
@@ -47,6 +48,10 @@ export function getInstaBox(box: Box): string {
 
 export function getMediumBox(box: Box): string {
   return generateBoxSVG(box, mediumStyle);
+}
+
+export function getVelogBox(box: Box): string {
+  return generateBoxSVG(box, velogStyle);
 }
 
 export function spaceChangeTitle(title: string): string {

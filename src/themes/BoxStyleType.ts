@@ -5,4 +5,5 @@ export enum BoxStyle {
     LINKED = 'linked',
     DEFAULT = 'default',
     MEDIUM = 'medium',
+    VELOG = 'velog',
   }
