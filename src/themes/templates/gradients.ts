@@ -24,8 +24,8 @@ export const svgGradients = `
           <stop offset="100%" style="stop-color:rgb(252, 175, 69)" />
         </linearGradient>
   <linearGradient id="linkedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-         <stop offset="0%" style="stop-color:rgba(0, 118, 181, 0.62)" />
-          <stop offset="30%" style="stop-color:rgb(0, 114,177)" />
-          <stop offset="100%" style="stop-color:rgb(7, 143, 217)" />
+         <stop offset="0%" style="stop-color:rgb(0, 91, 150)" />
+          <stop offset="50%" style="stop-color:rgb(0, 119, 181)" />
+          <stop offset="100%" style="stop-color:rgb(10, 102, 194)" />
         </linearGradient>
 `;
