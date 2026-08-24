@@ -1,4 +1,4 @@
-[![box](https://markdown-box-generator.vercel.app/api/box?title=markdown_box_code_👀&author=jongeui)](https://github.com/jongeuni/markdown-box-generator) [![box](https://markdown-box-generator.vercel.app/api/box?title=markdown_box_code_👀_move_title&author=jongeui&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=md_box_code_👀&author=jongeui)](https://github.com/jongeuni/markdown-box-generator) [![box](https://markdown-box-generator.vercel.app/api/box?title=If_the_text_is_long,_the_title_shifts&author=jongeui&style=brunch)](https://github.com/jongeuni/markdown-box-generator)
 <br>
 <br>
 
