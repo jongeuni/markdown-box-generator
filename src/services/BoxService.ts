@@ -1,4 +1,4 @@
-import { getBrunchBox, getDefaultBox, getInstaBox, getLinkedBox, getMediumBox, getTistoryBox, getVelogBox } from '../themes/BoxGenerator';
+import { getBrunchBox, getDefaultBox, getGithubBox, getInstaBox, getLinkedBox, getMediumBox, getTistoryBox, getVelogBox } from '../themes/BoxGenerator';
 import { BoxStyle } from '../themes/BoxStyleType';
 
 interface BoxParams {
@@ -30,6 +30,8 @@ export class BoxService {
         return getMediumBox({ link, title, date, author, isIconToggle });
       case BoxStyle.VELOG:
         return getVelogBox({ link, title, date, author, isIconToggle });
+      case BoxStyle.GITHUB:
+        return getGithubBox({ link, title, date, author, isIconToggle });
       default:
         return getDefaultBox({ link, title, date, author, isIconToggle });
     }

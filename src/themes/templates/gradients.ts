@@ -37,4 +37,8 @@ export const svgGradients = `
          <stop offset="0%" style="stop-color:rgb(32, 201, 151)" />
           <stop offset="100%" style="stop-color:rgb(18, 184, 134)" />
         </linearGradient>
+  <linearGradient id="githubGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+         <stop offset="0%" style="stop-color:rgb(13, 17, 23)" />
+          <stop offset="100%" style="stop-color:rgb(33, 38, 45)" />
+        </linearGradient>
 `;

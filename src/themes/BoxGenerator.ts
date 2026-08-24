@@ -8,6 +8,7 @@ import { instaStyle } from "./templates/InstaStyle";
 import { linkedStyle } from "./templates/LinkedStyle";
 import { mediumStyle } from "./templates/MediumStyle";
 import { velogStyle } from "./templates/VelogStyle";
+import { githubStyle } from "./templates/GithubStyle";
 
 export interface BoxStyleDto {
   name: string;
@@ -52,6 +53,10 @@ export function getMediumBox(box: Box): string {
 
 export function getVelogBox(box: Box): string {
   return generateBoxSVG(box, velogStyle);
+}
+
+export function getGithubBox(box: Box): string {
+  return generateBoxSVG(box, githubStyle);
 }
 
 export function spaceChangeTitle(title: string): string {

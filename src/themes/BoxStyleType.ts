@@ -6,4 +6,5 @@ export enum BoxStyle {
     DEFAULT = 'default',
     MEDIUM = 'medium',
     VELOG = 'velog',
+    GITHUB = 'github',
   }

@@ -43,6 +43,7 @@
 | 기본 스타일  | DEFAULT |
 | 미디엄 스타일  | MEDIUM |
 | 벨로그 스타일  | VELOG |
+| 깃허브 스타일  | GITHUB |
 
 
 #### - 티스토리 스타일 (TISTORY)
@@ -57,4 +58,6 @@
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Medium_style&author=Author&style=medium)](https://github.com/jongeuni/markdown-box-generator)
 #### - 벨로그 스타일 (VELOG)
 [![box](https://markdown-box-generator.vercel.app/api/box?title=Velog_style&author=Author&style=velog)](https://github.com/jongeuni/markdown-box-generator)
+#### - 깃허브 스타일 (GITHUB)
+[![box](https://markdown-box-generator.vercel.app/api/box?title=Github_style&author=Author&style=github)](https://github.com/jongeuni/markdown-box-generator)
 
