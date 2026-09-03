@@ -25,6 +25,6 @@ export const githubStyle: BoxStyleDto = {
     }
   `,
   iconSVG: `
-  <text x="${TextPosition.x}" y="${TextPosition.y - 4}" font-family="'Consolas', 'Courier New', monospace" font-weight="700" font-size="20" fill="rgb(63, 185, 80)">&gt;</text>
+  <text x="${TextPosition.x}" y="${TextPosition.y}" font-family="'Consolas', 'Courier New', monospace" font-weight="700" font-size="20" fill="rgb(63, 185, 80)">&gt;</text>
 `
 };

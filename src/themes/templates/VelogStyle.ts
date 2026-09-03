@@ -25,6 +25,6 @@ export const velogStyle: BoxStyleDto = {
     }
   `,
   iconSVG: `
-  <text x="${TextPosition.x}" y="${TextPosition.y - 4}" font-family="'Segoe UI', system-ui, sans-serif" font-weight="800" font-size="22" fill="white">v</text>
+  <text x="${TextPosition.x}" y="${TextPosition.y}" font-family="'Segoe UI', system-ui, sans-serif" font-weight="800" font-size="22" fill="white">v</text>
 `
 };

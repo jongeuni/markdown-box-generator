@@ -25,6 +25,6 @@ export const naverStyle: BoxStyleDto = {
     }
   `,
   iconSVG: `
-  <text x="${TextPosition.x}" y="${TextPosition.y - 4}" font-family="'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif" font-weight="800" font-size="20" fill="rgb(3, 199, 90)">N</text>
+  <text x="${TextPosition.x}" y="${TextPosition.y}" font-family="'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif" font-weight="800" font-size="20" fill="rgb(3, 199, 90)">N</text>
 `
 };

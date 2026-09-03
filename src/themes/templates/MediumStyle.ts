@@ -25,6 +25,6 @@ export const mediumStyle: BoxStyleDto = {
     }
   `,
   iconSVG: `
-  <text x="${TextPosition.x}" y="${TextPosition.y - 4}" font-family="Georgia, serif" font-weight="700" font-size="22" fill="rgb(26, 26, 26)">M</text>
+  <text x="${TextPosition.x}" y="${TextPosition.y}" font-family="Georgia, serif" font-weight="700" font-size="22" fill="rgb(26, 26, 26)">M</text>
 `
 };
